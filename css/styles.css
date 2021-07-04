@@ -63,6 +63,12 @@
   background-color: #1A252F !important;
 }
 
+#webchat {
+  max-height: 600px;
+  height: 600px;
+  box-shadow: 15px 5px 5px rgba(128, 128, 128, 0.363);
+}
+
 /* */
 
 body {
@@ -11088,7 +11094,10 @@ html {
 }
 
 .copyright {
+  margin-top: 80px;
   background-color: #1a252f;
+  width: 100%;
+  position: absolute;
 }
 
 
