@@ -57,11 +57,7 @@
                                     hideUploadButton: true,
                                     bubbleBackground: 'rgba(227, 0, 19, .2)',
                                     bubbleFromUserBackground: 'rgba(126, 138, 145, .2)'
-                                }; 
-                                const avatarOptions = {
-                                   botAvatarImage: './assets/img/Vladi-pb3.png',
-                                    botAvatarInitials: 'VLADI'
-                                };                               
+                                };                              
                                 const store = window.WebChat.createStore(
                                 {},
                                 /**** Send Message as soon as person entered the chat ****/
@@ -79,7 +75,7 @@
                             );
                             window.WebChat.renderWebChat({
                                 directLine: window.WebChat.createDirectLine({ token }),
-                                store, styleOptions: avatarOptions
+                                store, styleOptions
                             }, document.getElementById('webchat'));
 
                             document.querySelector('#webchat > *').focus();
